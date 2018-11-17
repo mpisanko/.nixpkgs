@@ -2,7 +2,7 @@
 set -e
 
 echo "Installing nix profile"
-nix-env -i all -f ./config.nix
+nix-env -i all --show-trace
 
 pushd $HOME > /dev/null
 

@@ -1,6 +1,10 @@
 source $HOME/.nix-profile/etc/profile.d/nix.sh"
 export EDITOR=vim
 
+alias l='ls -alh'
+alias vi='nvim'
+alias vim='nvim'
+
 source @fzf_src@/shell/key-bindings.bash
 export FZF_TMUX=0
 

@@ -7,10 +7,10 @@
   };
 
   packageOverrides = pkgs_: with pkgs_;
-    let jdk = openjdk10; in {
+    let jdk = openjdk; in {
 
     bash-config = import ./bash-config {
-      inherit (pkgs) stdenv fzf; inherit jdk;
+      inherit (pkgs) stdenv fzf jdk;
     };
     my-vim = import ./vim-config { inherit pkgs ; };
 
@@ -20,7 +20,6 @@
       paths = [
         bash-config
 
-        nix-repl
         nix-prefetch-scripts
         nixpkgs-lint
         nox
@@ -43,7 +42,6 @@
 
         git
         git-radar
-        gitg
         meld
         tig
 
@@ -54,26 +52,15 @@
         leiningen
         boot
         maven
-        idea.idea-community
 
-        python36
         gcc
 
         nim
         ponyc
 
-        python36Packages.glances
-
-        python36Packages.docker_compose
         vagrant
         ansible2
 
-        libreoffice
-        vlc
-        hexchat
-        
-        slack
-        spotify
       ];
     };
   };
