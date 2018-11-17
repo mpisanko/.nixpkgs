@@ -2,7 +2,7 @@
 set -e
 
 echo "Installing nix profile"
-nix-env -i all
+nix-env -i all -f ./config.nix
 
 pushd $HOME > /dev/null
 
