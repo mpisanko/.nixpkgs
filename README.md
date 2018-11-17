@@ -11,6 +11,6 @@ into **$out/userHome**.
 ## How to use it?
 
 1. Install [nix](https://nixos.org/nix/)
-2. Git clone **.nixpkgs** into **~/.nixpkgs**
+2. Git clone **.nixpkgs** into **~/.config/nixpkgs**
 3. Customize it for your needs.
-4. Run `.nixpkgs/install.sh`
+4. Run `~/.config/nixpkgs/install.sh`

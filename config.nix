@@ -49,6 +49,7 @@
         jq
 
         jdk
+        clojure
         leiningen
         boot
         maven
