@@ -1,11 +1,6 @@
 {
   allowUnfree = true;
 
-  firefox = {
-    enableGoogleTalkPlugin = true;
-    enableAdobeFlash = true;
-  };
-
   packageOverrides = pkgs_: with pkgs_;
     let jdk = openjdk; in {
 
@@ -45,7 +40,6 @@
         meld
         tig
 
-        firefoxWrapper
         jq
 
         jdk
@@ -56,7 +50,6 @@
 
         gcc
 
-        nim
         ponyc
 
         vagrant
