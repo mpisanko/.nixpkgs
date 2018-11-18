@@ -36,6 +36,7 @@
         tree
 
         git
+        git-crypt
         git-radar
         meld
         tig
