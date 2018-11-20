@@ -26,10 +26,12 @@
         emacs
 
         telnet
+        wget
         bind
         netcat-openbsd
 
         powerline-fonts
+	source-code-pro
 
         gnumake
 
@@ -55,6 +57,7 @@
 
         vagrant
         ansible2
+        iterm2
 
       ];
     };
